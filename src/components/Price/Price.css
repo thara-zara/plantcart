@@ -1,0 +1,48 @@
+.price-card-details{
+    width: calc(100/4);
+    /* border: 1px solid rgb(0, 247, 255); */
+}
+.price-card-details .img{
+    height: 350px;
+    width: 100%;
+}
+.price-card-details .img img{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    
+}
+.name{
+    width: 100%;
+    /* border: 1px solid rgb(234, 112, 173); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name h1,h2{
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.price-card-details h3{
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(186, 186, 186);
+}
+button{
+        padding: 10px 30px 10px 30px;
+        border-radius: 50px;
+        background: rgb(84, 133, 63);
+        border: none;
+        color: #fff;
+        outline: none;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+@media screen and (max-width:500px){
+    .price-card-details .img{
+        height: 350px;
+        width: 100%;
+    }
+}

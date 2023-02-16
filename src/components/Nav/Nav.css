@@ -1,0 +1,127 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    height: 80px;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    position: relative;
+}
+
+.right-item{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* cursor: pointer; */
+}
+.right-item > div{
+cursor: pointer;
+}
+.menu,.btn{
+    display: none;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* cursor: pointer; */
+}
+.nav-left > div{
+    cursor: pointer;
+}
+.nav-left i{
+    color:rgb(84, 133, 63) ;
+    font-size: 18px;
+} 
+.nav-right img{
+    width: 40px;
+    cursor: pointer;
+}
+.cart-size{
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.shoping{
+ display: flex;   
+ align-items: center;
+ justify-content: center;
+}
+.shop-shop{
+    display: flex;
+}
+@media screen and (max-width:840px){
+    .navbar .nav-right .right-item{
+        top:40px;
+        position: absolute;
+        flex-direction: column;
+        gap: 20px;
+        background: #fff;
+        color: black;
+        padding: 50px 25px 25px 25px;
+        
+        height: 450px;
+        width: 250px;
+        text-align: start;
+        left: -300px;
+        transition: 0.5s ease-in-out;
+    }
+    .navbar .nav-right .right-item.active{
+        left: -50px;
+        z-index: 10;
+        transition: 0.5s ease-in-out;
+    }
+    .menu,.btn{
+        display: block;
+        cursor: pointer;
+    }
+    .btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        /* width: 30px;
+        height: 30px;
+        background: rgb(84, 133, 63);
+        cursor: pointer; */
+    }
+    .btn i{
+        color: rgb(84, 133, 63);
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .nav-left span{
+        display: none;
+    }
+    .nav-left  .cart-size{
+        display:flex !important;
+    }
+    .nav-left i{
+        color:rgb(84, 133, 63) ;
+        font-size: 18px;
+    } 
+    
+}
+@media screen and (max-width:500px){
+    .btn i{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .nav-left span{
+        display: none;
+    }
+}

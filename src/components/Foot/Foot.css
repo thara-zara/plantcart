@@ -1,0 +1,84 @@
+.foot{
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding-bottom: 25px;
+}
+.foot img{
+    width: 40px;
+}
+.footer{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.logo-foot p{
+    font-size:16px;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: rgb(126, 126, 126);
+}
+.footer h1{
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.footer span{
+    height: 5px;
+    background: rgb(126, 126, 126);
+    width: 75%;
+}
+.footer h5{
+    font-size:16px;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: rgb(126, 126, 126);
+}
+.copyright{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright hr{
+  color:   5px solid red;
+}
+.copy-text{
+    font-family: 15px;
+    color: rgb(126, 126, 126);
+}
+.social{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:840px) {
+    .footer{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* display: flex;
+        justify-content: space-between; */
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .visit{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .footer{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* display: flex;
+        justify-content: space-between; */
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

@@ -1,0 +1,10 @@
+.button button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 50px;
+    background: rgb(84, 133, 63);
+    border: none;
+    color: #fff;
+    outline: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
